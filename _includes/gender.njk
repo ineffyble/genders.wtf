@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container object-center mx-auto h-auto grid justify-items-center">
-  <h1 class="text-8xl font-gender">{{name}}</h1>
+  <h1 class="text-4xl lg:text-6xl font-gender text-center">{{name}}</h1>
   <div class="flex flex-wrap justify-center p-4">
     {% set cls = cycler("pink", "blue") %}
     {% for tag in tags %}
@@ -17,7 +17,7 @@ layout: default
     {% endif %}
     {% endfor %}
   </div>
-  <div class="max-w-4xl">
+  <div class="max-w-4xl shadow-lg">
       {% image page.fileSlug, name, "100vw", "" %}
   </div>
 </div>
