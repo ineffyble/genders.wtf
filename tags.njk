@@ -1,0 +1,14 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - genders
+permalink: /tags/{{ tag }}/
+---
+<h1 class="font-gender text-4xl text-center mb-8">#{{ tag }}</h1>
+
+{% set genders = collections[ tag ] %}
+{% include "gender-tiles.njk" %}

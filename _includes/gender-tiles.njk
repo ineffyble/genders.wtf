@@ -1,0 +1,11 @@
+<div class="md:masonry-2-col lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit h-auto px-4">
+  {% set cls = cycler("pink", "blue") %}
+  {%- for gender in genders -%}
+    <a href="{{gender.url}}">
+      <div class="break-inside p-8 my-6 space-y-5 bg-{{cls.next()}}-100 rounded-lg grid justify-items-center">
+        {% image gender.fileSlug, gender.data.name, "100vw" %}
+        <span class="font-gender text-2xl">{{gender.data.name}}</span>
+      </div>
+    </a>
+  {%- endfor -%}
+</div>

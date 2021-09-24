@@ -1,0 +1,26 @@
+{
+  "name": "genderswtf",
+  "version": "1.0.0",
+  "scripts": {
+    "build:postcss": "postcss style.css --output _site/css/style.css",
+    "build:eleventy": "eleventy",
+    "build": "yarn build:eleventy && yarn build:postcss",
+    "dev:postcss": "TAILWIND_MODE=watch postcss style.css --output _site/css/style.css --watch",
+    "dev:eleventy": "eleventy --serve",
+    "dev": "concurrently yarn:dev:postcss yarn:dev:eleventy"
+  },
+  "keywords": [],
+  "author": "Effy Elden <genders@effy.is>",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy-img": "^0.10.0",
+    "autoprefixer": "^10.3.5",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
