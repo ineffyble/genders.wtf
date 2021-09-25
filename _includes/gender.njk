@@ -10,7 +10,7 @@ layout: default
     {% if tag !== "genders" %}
       {% set color = cls.next() %}
       <a href="/tags/{{tag}}">
-        <div class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-{{color}}-700 bg-blue-100 border border-{{color}}-300 ">
+        <div class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-{{color}}-700 border border-{{color}}-300 ">
           <div class="text-xs font-normal leading-none max-w-full flex-initial">#{{tag}}</div>
         </div>
       </a>
