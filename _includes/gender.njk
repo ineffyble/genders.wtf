@@ -4,7 +4,7 @@ layout: default
 
 <div class="container object-center mx-auto h-auto grid justify-items-center">
   <h1 class="text-4xl lg:text-6xl font-gender text-center">{{name}}</h1>
-  <div class="flex flex-wrap justify-center p-4">
+  <div class="flex flex-wrap justify-center p-2">
     {% set cls = cycler("pink", "blue") %}
     {% for tag in tags %}
     {% if tag !== "genders" %}
@@ -17,6 +17,37 @@ layout: default
     {% endif %}
     {% endfor %}
   </div>
+  {% if widget %}
+  <div class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="form-modal">
+    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+	    <div class="text-center">
+        {% for gnd in collections.genders %}
+          {% set gender = gnd.data %}
+          {% if gender.name == name %}
+            {% include "gender-form.njk" %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-center pb-4">
+  	<button class="bg-pink-500 text-white rounded-md px-8 py-2 text-base font-medium hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-300" id="form-open-btn">
+		Try out this form
+	</button>
+  </div>
+  <script>
+    let modal = document.getElementById("form-modal");
+    window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+    }
+    let btn = document.getElementById("form-open-btn");
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+  </script>
+  {% endif %}
   <div class="max-w-4xl shadow-lg">
       {% image page.fileSlug, name, "100vw", "" %}
   </div>

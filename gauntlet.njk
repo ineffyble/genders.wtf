@@ -1,0 +1,9 @@
+<h1 class="font-gender text-4xl text-center mb-8">The Gauntlet</h1>
+
+<div class="mx-auto container max-w-xl">
+{% for genderPage in collections.genders %}
+  {% set gender = genderPage.data %}
+  {% set addpadding = true %}
+  {% include "gender-form.njk" %}
+{% endfor %}
+</div>

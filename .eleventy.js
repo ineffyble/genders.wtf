@@ -29,4 +29,7 @@ module.exports = (function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("debug", thing => console.log(thing));
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("fonts/*");
+  eleventyConfig.addFilter('log', value => {
+    console.log(value)
+  });
 });
