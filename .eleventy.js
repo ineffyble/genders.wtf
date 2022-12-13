@@ -12,12 +12,15 @@ async function imageShortcode(slug, alt, sizes, classes) {
   });
 
   let imageAttributes = {
-    classes,
     alt,
     sizes,
     loading: "lazy",
     decoding: "async",
   };
+
+  if (classes) {
+    imageAttributes.classes = classes;
+  }
 
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return Image.generateHTML(metadata, imageAttributes);

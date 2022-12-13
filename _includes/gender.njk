@@ -49,7 +49,7 @@ layout: default
   </script>
   {% endif %}
   <div class="max-w-4xl shadow-lg">
-      {% image page.fileSlug, name, "100vw", "" %}
+      {% image page.fileSlug, (alt | escape), "100vw" %}
   </div>
 </div>
 
