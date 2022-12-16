@@ -1,5 +1,5 @@
 ---
-name: Tag yourself, I'm "pronouns"
+name: Pronouns
 alt: A screenshot of the "Gender" page of a form, where the options are Male, Female, Pronouns, Other
 widget: radio
 prompt: Gender
