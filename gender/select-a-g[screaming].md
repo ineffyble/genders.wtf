@@ -4,6 +4,7 @@ alt: A screenshot of a full-screen dialog from a Nintendo Wii game, with the pro
 widget: radio
 radio:
   columns: true
+prompt: Select a g
 options:
    - Male
    - ▏▎▌▉▎▌▊█▉▋▌▎
