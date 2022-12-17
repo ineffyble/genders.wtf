@@ -27,12 +27,14 @@ async function imageShortcode(slug, alt, sizes, classes) {
 }
 
 
-module.exports = (function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("debug", thing => console.log(thing));
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("fonts/*");
   eleventyConfig.addFilter('log', value => {
     console.log(value)
   });
-});
+};
