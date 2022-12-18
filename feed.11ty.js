@@ -24,7 +24,7 @@ exports.render = async function ({ permalink, collections }) {
     <feed xmlns="http://www.w3.org/2005/Atom" xml:base="${metadata.url}">
       <title>${metadata.title}</title>
       <link href="${permalink || rss.absoluteUrl(metadata.url)}" rel="self"/>
-      <link href="."/>
+      <link rel="hub" href="https://genderswtf.superfeedr.com/" />
       <updated>${rss.dateToRfc3339(rss.getNewestCollectionItemDate(collections.genders))}</updated>
       <id>${metadata.url}</id>
       <author>
