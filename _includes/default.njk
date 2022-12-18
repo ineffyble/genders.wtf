@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Genders.WTF{% if name %} | {{name}} {% endif%}</title>
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="alternate" type="application/atom+xml" href="/feed.xml" />
  </head>
  <body>
   <header class="bg-black mb-6">
@@ -24,9 +25,13 @@
         <span class="text-xl font-gender leading-loose font-bold uppercase text-white md:p-8 text-center md:text-left block md:inline">
         by <a href="https://effy.space">effy</a>
         <div class="md:inline-block md:right-0 md:absolute md:mr-6 text-center md:text-left">
-          <a href="/gauntlet">Take the gauntlet</a>
+          <a href="/gauntlet">Take&nbsp;the&nbsp;gauntlet</a>
           &nbsp;|&nbsp;
-          <a href="https://github.com/ineffyble/genders.wtf/blob/main/README.md">Add a gender</a>
+          <span class="hidden md:inline">
+            <a href="/feed.xml">RSS&nbsp;feed</a>&nbsp;<sup><a href="https://aboutfeeds.com">(?)</a></sup>
+            &nbsp;|&nbsp;
+          </span>
+          <a href="https://github.com/ineffyble/genders.wtf/blob/main/README.md">Add&nbsp;a&nbsp;gender</a>
         </div>
         </span>
     </div>
