@@ -23,8 +23,8 @@ exports.render = async function ({ permalink, collections }) {
     <?xml version="1.0" encoding="utf-8" ?>
     <feed xmlns="http://www.w3.org/2005/Atom" xml:base="${metadata.url}">
       <title>${metadata.title}</title>
-      <link href="${permalink | rss.absoluteUrl(metadata.url)}" rel="self"/>
-      <link href="${metadata.url}"/>
+      <link href="${permalink || rss.absoluteUrl(metadata.url)}" rel="self"/>
+      <link href="."/>
       <updated>${rss.dateToRfc3339(rss.getNewestCollectionItemDate(collections.genders))}</updated>
       <id>${metadata.url}</id>
       <author>
