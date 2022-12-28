@@ -10,5 +10,6 @@ tags:
   - genders
   - sexes
   - secrets
+  - scp-2521
   - alternative-trinaries
 ---
