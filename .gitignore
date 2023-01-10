@@ -1,3 +1,6 @@
+# Mac files
+.DS_Store
+
 # Generated site
 _site
 
