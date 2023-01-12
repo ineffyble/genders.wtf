@@ -34,6 +34,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("debug", thing => console.log(thing));
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("fonts/*");
+  eleventyConfig.addPassthroughCopy("*.png");
+  eleventyConfig.addPassthroughCopy("*.svg");
+  eleventyConfig.addPassthroughCopy("*.ico");
+  eleventyConfig.addPassthroughCopy("*.xml");
+  eleventyConfig.addPassthroughCopy("*.webmanifest");
   eleventyConfig.addFilter('log', value => {
     console.log(value)
   });
