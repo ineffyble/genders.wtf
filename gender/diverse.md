@@ -12,4 +12,5 @@ options:
 tags:
   - genders
   - alternative-trinaries
+  - german
 ---
