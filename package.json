@@ -17,7 +17,7 @@
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.3.5",
-    "dedent": "^0.7.0",
+    "dedent": "^1.0.0",
     "js-yaml": "^4.1.0",
     "postcss": "^8.3.7",
     "postcss-cli": "^10.0.0",
