@@ -24,27 +24,27 @@
     ssri "^8.0.1"
     ws "^8.13.0"
 
-"@11ty/eleventy-fetch@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-3.0.0.tgz#b767ad99d871616c1f8011bba9d26b84dc583fbf"
-  integrity sha512-qJvfb331rYQAmlCS71Ygg0/XHUdB4/qXBOLsG0DJ1m61WL5JNha52OtKVeQq34u2J2Nfzim+X4TIL/+QyesB7Q==
+"@11ty/eleventy-fetch@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-4.0.0.tgz#500d69b9ec336d8e4fd1e618cabb9a262c7a333f"
+  integrity sha512-wGAd0r+8DUWr22fK5r07dOKuNY6ltA7hX+sJzngGZL1yJmuUVdM/xPQZ+iq0BFgf/ZeRdpVEzf2D0cpVZUuiTg==
   dependencies:
-    debug "^4.3.3"
+    debug "^4.3.4"
     flat-cache "^3.0.4"
     node-fetch "^2.6.7"
     p-queue "^6.6.2"
 
 "@11ty/eleventy-img@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-3.1.0.tgz#3f956efd951987bd9fa18fa8d752377cf646b37a"
-  integrity sha512-c5RrAdEs7WdNu/Ss4IRSLBCEU8EZnay8vo49DPVSrtAQV+WeqBDq0SJkXj+p+nOJGRAtInn9WdsUqw6kNtEMnA==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-3.1.1.tgz#a87814262224fdfbee36cde3a7671a0a2b4fbba6"
+  integrity sha512-0UxJ5vSYZD/7bdS237j5d4YY5Nyv280/YJo+gMAE6ASeMn/FZiv3iXc1jf2extSSzmdsW3TjWHf1oojs6WSYrg==
   dependencies:
-    "@11ty/eleventy-fetch" "^3.0.0"
+    "@11ty/eleventy-fetch" "^4.0.0"
     debug "^4.3.4"
-    entities "^4.4.0"
+    entities "^4.5.0"
     image-size "^1.0.2"
     p-queue "^6.6.2"
-    sharp "^0.32.0"
+    sharp "^0.32.6"
 
 "@11ty/eleventy-plugin-rss@^1.2.0":
   version "1.2.0"
@@ -606,7 +606,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.3.3, debug@^4.3.4:
+debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -741,7 +741,7 @@ entities@^3.0.1, entities@~3.0.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-3.0.1.tgz#2b887ca62585e96db3903482d336c1006c3001d4"
   integrity sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==
 
-entities@^4.4.0:
+entities@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-4.5.0.tgz#5d268ea5e7113ec74c4d033b79ea5a35a488fb48"
   integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
@@ -2010,10 +2010,10 @@ semver@^7.3.5, semver@^7.3.8, semver@^7.5.4:
   dependencies:
     lru-cache "^6.0.0"
 
-sharp@^0.32.0:
-  version "0.32.5"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.5.tgz#9ddc78ead6446094f51e50355a2d4ec6e7220cd4"
-  integrity sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==
+sharp@^0.32.6:
+  version "0.32.6"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
+  integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
   dependencies:
     color "^4.2.3"
     detect-libc "^2.0.2"
