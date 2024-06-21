@@ -8,4 +8,6 @@ options:
   - Privé (private)
 tags:
   - genders
+  - multilingual
+  - alternative-trinaries
 ---
