@@ -1332,9 +1332,9 @@ jake@^10.8.5:
     minimatch "^3.1.2"
 
 jiti@^1.21.6:
-  version "1.21.6"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.6.tgz#6c7f7398dd4b3142767f9a168af2f317a428d268"
-  integrity sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==
+  version "1.21.7"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.7.tgz#9dd81043424a3d28458b193d965f0d18a2300ba9"
+  integrity sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==
 
 js-stringify@^1.0.2:
   version "1.0.2"
@@ -2397,9 +2397,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 tailwindcss@^3.0.0:
-  version "3.4.16"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.16.tgz#35a7c3030844d6000fc271878db4096b6a8d2ec9"
-  integrity sha512-TI4Cyx7gDiZ6r44ewaJmt0o6BrMCT5aK5e0rmJ/G9Xq3w7CX/5VXl/zIPEJZFUK5VEqwByyhqNPycPlvcK4ZNw==
+  version "3.4.17"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.17.tgz#ae8406c0f96696a631c790768ff319d46d5e5a63"
+  integrity sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==
   dependencies:
     "@alloc/quick-lru" "^5.2.0"
     arg "^5.0.2"
