@@ -13,7 +13,7 @@
   "author": "Effy Elden <effy@effy.space>",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.3.5",
