@@ -20,7 +20,7 @@
     "dedent": "^1.0.0",
     "js-yaml": "^4.1.0",
     "postcss": "^8.3.7",
-    "postcss-cli": "^10.0.0",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.0.0"
   },
   "devDependencies": {
