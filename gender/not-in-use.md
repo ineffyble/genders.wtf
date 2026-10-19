@@ -10,5 +10,5 @@ options:
   - Heterosexual or straight
   - Other sexual orientation
   - Prefer not to say
-  - "_not in use"
+  - _not in use
 ---
