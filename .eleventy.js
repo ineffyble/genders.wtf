@@ -1,6 +1,6 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
-const Image = require("@11ty/eleventy-img");
+const Image = require("@11ty/eleventy-img").default;
 
 async function imageShortcode(slug, alt, sizes, classes) {
   const images = fs.readdirSync('img/');
@@ -28,7 +28,7 @@ async function imageShortcode(slug, alt, sizes, classes) {
 
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss").default);
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("debug", thing => console.log(thing));

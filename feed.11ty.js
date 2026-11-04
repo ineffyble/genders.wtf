@@ -1,4 +1,4 @@
-const rss = require("@11ty/eleventy-plugin-rss");
+const rss = require("@11ty/eleventy-plugin-rss").default;
 const dedent = require("dedent");
 const { escape } = require("nunjucks").lib;
 

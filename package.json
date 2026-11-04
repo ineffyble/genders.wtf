@@ -13,17 +13,18 @@
   "author": "Effy Elden <effy@effy.space>",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-img": "^3.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "autoprefixer": "^10.3.5",
-    "dedent": "^1.0.0",
-    "js-yaml": "^4.1.0",
-    "postcss": "^8.3.7",
-    "postcss-cli": "^10.0.0",
-    "tailwindcss": "^3.0.0"
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-img": "^7.1.1",
+    "@11ty/eleventy-plugin-rss": "^3.1.0",
+    "@tailwindcss/postcss": "^4.3.4",
+    "autoprefixer": "^10.6.2",
+    "dedent": "^1.7.2",
+    "js-yaml": "^5.5.0",
+    "postcss": "^8.5.32",
+    "postcss-cli": "^12.0.0",
+    "tailwindcss": "^4.3.4"
   },
   "devDependencies": {
-    "concurrently": "^8.0.0"
+    "concurrently": "^10.0.6"
   }
 }

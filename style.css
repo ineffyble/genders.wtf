@@ -1,24 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "./tailwind.config.js";
 
-@layer utilities {
-  @variants responsive {
-      .masonry-3-col {
-          column-count: 3;
-          column-gap: 1em;
-      }
-      .masonry-2-col {
-          column-count: 2;
-          column-gap: 1em;
-      }
-      .break-inside {
-          break-inside: avoid;
-      }
-  }
+@utility masonry-3-col {
+  column-count: 3;
+  column-gap: 1em;
+}
+
+@utility masonry-2-col {
+  column-count: 2;
+  column-gap: 1em;
+}
+
+@utility break-inside {
+  break-inside: avoid;
 }
 
 @layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   @font-face {
     font-family: 'XBAND-Rough';
     src:url('/fonts/XBAND-Rough.ttf.woff') format('woff'),
